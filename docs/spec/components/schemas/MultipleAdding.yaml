@@ -1,0 +1,36 @@
+type: object
+required:
+  - module
+  - link
+  - access_level
+  - users
+  - from_user
+  - to_user
+properties:
+  module:
+    type: string
+    description: Module to grant permission
+    example: github
+  link:
+    type: string
+    description: Submodule where to grant permission
+    example: "distributed_lab/acs"
+  access_level:
+    type: string
+    description: >-
+      access level for setting in module, depending on module it can be
+      string or integer
+    example: "123"
+  users:
+    description: List of users for whom we give permission
+    type: array
+    items:
+      $ref: '#/components/schemas/User'
+  from_user:
+    type: string
+    description: user's id who send request
+    example: '1'
+  to_user:
+    type: string
+    description: user's id for who request was sent
+    example: '2'

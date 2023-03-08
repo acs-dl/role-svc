@@ -1,0 +1,10 @@
+allOf:
+  - $ref: '#/components/schemas/RequestKey'
+  - type: object
+    required:
+      - attributes
+    properties:
+      attributes:
+        oneOf:
+          - $ref: '#/components/schemas/MultipleAdding'
+

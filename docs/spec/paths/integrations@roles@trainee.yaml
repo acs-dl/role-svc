@@ -1,0 +1,20 @@
+post:
+  tags:
+    - Multiple request
+  summary: Request
+  operationId: addRequest
+  requestBody:
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            data:
+              $ref: '#/components/schemas/Request'
+  responses:
+    '202':
+      description: Accepted
+    '400':
+      description: Bad request.
+    '500':
+      description: Internal server error.

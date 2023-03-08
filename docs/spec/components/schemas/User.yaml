@@ -1,0 +1,23 @@
+allOf:
+  - $ref: '#/components/schemas/UserKey'
+  - type: object
+    required:
+      - attributes
+    properties:
+      attributes:
+        type: object
+        required:
+          - user_id
+        properties:
+          user_id:
+            type: string
+            description: user id from identity
+            example: "134"
+          username:
+            type: string
+            description: username from module
+            example: "mhrynenko"
+          phone:
+            type: string
+            description: phone from module
+            example: "0984379623"

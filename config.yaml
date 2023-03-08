@@ -1,0 +1,24 @@
+log:
+  level: debug
+  disable_sentry: true
+
+db:
+  url: db_url
+
+links:
+  orchestrator: "http://localhost:8000/integrations/orchestrator"
+
+listener:
+  addr: :9005
+
+jwt:
+  secret: SuPeR SeCrEt PhRaSe
+  refresh_life: 6h
+  access_life: 10m5s
+
+cop:
+  disabled: true
+  endpoint: "http://..."
+  upstream: "http://..."
+  service_name: role-svc
+  service_port: 80
