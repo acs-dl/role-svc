@@ -22,6 +22,9 @@ func (s *service) router() chi.Router {
 		),
 	)
 	r.Route("/integrations/role-svc", func(r chi.Router) {
+		r.Get("/user_roles", handlers.GetUserRolesMap) // comes from orchestrator
+		r.Get("/roles", handlers.GetRolesMap)          // comes from orchestrator
+
 		r.Route("/requests/users", func(r chi.Router) {
 			r.With(auth.Jwt(secret, data.ModuleName, []string{"write"}...)).
 				Post("/add", handlers.AddUsers)

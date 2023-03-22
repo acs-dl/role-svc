@@ -16,6 +16,7 @@ type Config interface {
 
 	Links() *LinksCfg
 	JwtParams() *JwtCfg
+	Registrator() RegistratorConfig
 }
 
 type config struct {
@@ -25,8 +26,9 @@ type config struct {
 	comfig.Listenerer
 	getter kv.Getter
 
-	links  comfig.Once
-	jwtCfg comfig.Once
+	links       comfig.Once
+	jwtCfg      comfig.Once
+	registrator comfig.Once
 }
 
 func New(getter kv.Getter) Config {
