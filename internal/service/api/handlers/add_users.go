@@ -3,12 +3,13 @@ package handlers
 import (
 	"encoding/json"
 	"fmt"
-	"gitlab.com/distributed_lab/acs/role-svc/internal/service/helpers"
-	"gitlab.com/distributed_lab/acs/role-svc/internal/service/requests"
+	"net/http"
+
+	helpers2 "gitlab.com/distributed_lab/acs/role-svc/internal/service/api/helpers"
+	"gitlab.com/distributed_lab/acs/role-svc/internal/service/api/requests"
 	"gitlab.com/distributed_lab/acs/role-svc/resources"
 	"gitlab.com/distributed_lab/ape"
 	"gitlab.com/distributed_lab/ape/problems"
-	"net/http"
 )
 
 func AddUsers(w http.ResponseWriter, r *http.Request) {
@@ -20,7 +21,7 @@ func AddUsers(w http.ResponseWriter, r *http.Request) {
 	}
 
 	for i, user := range request.Data.Attributes.Users {
-		payload, err := helpers.CreateAddUserPayload(request.Data.Attributes.Link, user, request.Data.Attributes.AccessLevel)
+		payload, err := helpers2.CreateAddUserPayload(request.Data.Attributes.Link, user, request.Data.Attributes.AccessLevel)
 		if err != nil {
 			Log(r).WithError(err).Errorf("failed to create payload")
 			ape.RenderErr(w, problems.InternalError())
@@ -34,7 +35,7 @@ func AddUsers(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 
-		err = helpers.SendRequestToOrchestrator(LinksParams(r).Orchestrator, requestBody, r.Header.Get("Authorization"))
+		err = helpers2.SendRequestToOrchestrator(LinksParams(r).Orchestrator, requestBody, r.Header.Get("Authorization"))
 		if err != nil {
 			Log(r).WithError(err).Errorf("failed to send request to orchestrator")
 			ape.RenderErr(w, problems.InternalError())

@@ -2,9 +2,10 @@ package requests
 
 import (
 	"encoding/json"
+	"net/http"
+
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 	"gitlab.com/distributed_lab/acs/role-svc/resources"
-	"net/http"
 )
 
 type AddUsersRequest struct {
