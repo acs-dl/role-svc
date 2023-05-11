@@ -5,11 +5,11 @@ import (
 	"os/signal"
 	"syscall"
 
+	"github.com/acs-dl/role-svc/internal/config"
+	"github.com/acs-dl/role-svc/internal/data"
+	"github.com/acs-dl/role-svc/internal/registrator"
+	"github.com/acs-dl/role-svc/internal/service"
 	"github.com/alecthomas/kingpin"
-	"gitlab.com/distributed_lab/acs/role-svc/internal/config"
-	"gitlab.com/distributed_lab/acs/role-svc/internal/data"
-	"gitlab.com/distributed_lab/acs/role-svc/internal/registrator"
-	"gitlab.com/distributed_lab/acs/role-svc/internal/service"
 	"gitlab.com/distributed_lab/kit/kv"
 	"gitlab.com/distributed_lab/logan/v3"
 )

@@ -26,5 +26,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Database.
 - API handlers.
 
-[1.0.0]: https://gitlab.com/distributed_lab/acs/role-svc/-/tree/feature/develop
+[1.0.0]: https://github.com/acs-dl/role-svc/-/tree/feature/develop
 [1.0.0]: https://github.com/distributed_lab/acs/role-svc/compare/develop...feature/add_registration_roles

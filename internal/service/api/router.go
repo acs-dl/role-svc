@@ -1,10 +1,10 @@
 package api
 
 import (
+	auth "github.com/acs-dl/auth-svc/middlewares"
+	"github.com/acs-dl/role-svc/internal/data"
+	handlers2 "github.com/acs-dl/role-svc/internal/service/api/handlers"
 	"github.com/go-chi/chi"
-	auth "gitlab.com/distributed_lab/acs/auth/middlewares"
-	"gitlab.com/distributed_lab/acs/role-svc/internal/data"
-	handlers2 "gitlab.com/distributed_lab/acs/role-svc/internal/service/api/handlers"
 	"gitlab.com/distributed_lab/ape"
 )
 

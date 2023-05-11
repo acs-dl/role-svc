@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"gitlab.com/distributed_lab/acs/role-svc/internal/cli"
+	"github.com/acs-dl/role-svc/internal/cli"
 )
 
 func main() {

@@ -5,7 +5,7 @@ import (
 	"net"
 	"net/http"
 
-	"gitlab.com/distributed_lab/acs/role-svc/internal/config"
+	"github.com/acs-dl/role-svc/internal/config"
 	"gitlab.com/distributed_lab/kit/copus/types"
 	"gitlab.com/distributed_lab/logan/v3"
 	"gitlab.com/distributed_lab/logan/v3/errors"

@@ -7,7 +7,7 @@ Manage several actions with one endpoint
 ## Install
 
   ```
-  git clone gitlab.com/distributed_lab/acs/role-svc
+  git clone github.com/acs-dl/role-svc
   cd role-svc
   go build main.go
   export KV_VIPER_FILE=./config.yaml
@@ -39,8 +39,8 @@ Make sure that docker installed.
 use `docker run ` with `-p 8080:80` to expose port 80 to 8080
 
   ```
-  docker build -t gitlab.com/distributed_lab/acs/role-svc .
-  docker run -e KV_VIPER_FILE=/config.yaml gitlab.com/distributed_lab/acs/role-svc
+  docker build -t github.com/acs-dl/role-svc .
+  docker run -e KV_VIPER_FILE=/config.yaml github.com/acs-dl/role-svc
   ```
 
 ## Running from Source

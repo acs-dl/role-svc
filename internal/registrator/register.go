@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"gitlab.com/distributed_lab/acs/role-svc/internal/data"
-	"gitlab.com/distributed_lab/acs/role-svc/resources"
+	"github.com/acs-dl/role-svc/internal/data"
+	"github.com/acs-dl/role-svc/resources"
 	"gitlab.com/distributed_lab/logan/v3/errors"
 )
 

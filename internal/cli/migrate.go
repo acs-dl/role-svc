@@ -1,9 +1,9 @@
 package cli
 
 import (
+	"github.com/acs-dl/role-svc/internal/assets"
+	"github.com/acs-dl/role-svc/internal/config"
 	migrate "github.com/rubenv/sql-migrate"
-	"gitlab.com/distributed_lab/acs/role-svc/internal/assets"
-	"gitlab.com/distributed_lab/acs/role-svc/internal/config"
 	"gitlab.com/distributed_lab/logan/v3/errors"
 )
 

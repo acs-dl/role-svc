@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"gitlab.com/distributed_lab/acs/role-svc/internal/config"
-	"gitlab.com/distributed_lab/acs/role-svc/internal/data"
+	"github.com/acs-dl/role-svc/internal/config"
+	"github.com/acs-dl/role-svc/internal/data"
 	"gitlab.com/distributed_lab/logan/v3"
 	"gitlab.com/distributed_lab/running"
 )

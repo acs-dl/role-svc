@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"net/http"
 
-	helpers2 "gitlab.com/distributed_lab/acs/role-svc/internal/service/api/helpers"
-	"gitlab.com/distributed_lab/acs/role-svc/internal/service/api/requests"
-	"gitlab.com/distributed_lab/acs/role-svc/resources"
+	helpers2 "github.com/acs-dl/role-svc/internal/service/api/helpers"
+	"github.com/acs-dl/role-svc/internal/service/api/requests"
+	"github.com/acs-dl/role-svc/resources"
 	"gitlab.com/distributed_lab/ape"
 	"gitlab.com/distributed_lab/ape/problems"
 )

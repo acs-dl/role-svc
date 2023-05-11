@@ -3,7 +3,7 @@ package handlers
 import (
 	"net/http"
 
-	"gitlab.com/distributed_lab/acs/role-svc/resources"
+	"github.com/acs-dl/role-svc/resources"
 	"gitlab.com/distributed_lab/ape"
 )
 

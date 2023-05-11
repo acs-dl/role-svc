@@ -2,8 +2,8 @@ package helpers
 
 import (
 	"encoding/json"
-	"gitlab.com/distributed_lab/acs/role-svc/internal/data"
-	"gitlab.com/distributed_lab/acs/role-svc/resources"
+	"github.com/acs-dl/role-svc/internal/data"
+	"github.com/acs-dl/role-svc/resources"
 	"strconv"
 )
 

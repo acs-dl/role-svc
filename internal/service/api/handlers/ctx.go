@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	"gitlab.com/distributed_lab/acs/role-svc/internal/config"
+	"github.com/acs-dl/role-svc/internal/config"
 
 	"gitlab.com/distributed_lab/logan/v3"
 )

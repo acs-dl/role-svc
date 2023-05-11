@@ -3,7 +3,7 @@ package types
 import (
 	"context"
 
-	"gitlab.com/distributed_lab/acs/role-svc/internal/config"
+	"github.com/acs-dl/role-svc/internal/config"
 )
 
 type Runner = func(context context.Context, config config.Config)

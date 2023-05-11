@@ -2,11 +2,11 @@ FROM golang:1.19-alpine as buildbase
 
 RUN apk add git build-base
 
-WORKDIR /go/src/gitlab.com/distributed_lab/acs/role-svc
+WORKDIR /go/src/github.com/acs-dl/role-svc
 COPY vendor .
 COPY . .
 
-RUN GOOS=linux go build  -o /usr/local/bin/role-svc /go/src/gitlab.com/distributed_lab/acs/role-svc
+RUN GOOS=linux go build  -o /usr/local/bin/role-svc /go/src/github.com/acs-dl/role-svc
 
 
 FROM alpine:3.9

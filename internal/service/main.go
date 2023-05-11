@@ -4,10 +4,10 @@ import (
 	"context"
 	"sync"
 
-	"gitlab.com/distributed_lab/acs/role-svc/internal/config"
-	"gitlab.com/distributed_lab/acs/role-svc/internal/registrator"
-	"gitlab.com/distributed_lab/acs/role-svc/internal/service/api"
-	"gitlab.com/distributed_lab/acs/role-svc/internal/service/types"
+	"github.com/acs-dl/role-svc/internal/config"
+	"github.com/acs-dl/role-svc/internal/registrator"
+	"github.com/acs-dl/role-svc/internal/service/api"
+	"github.com/acs-dl/role-svc/internal/service/types"
 )
 
 var availableServices = map[string]types.Runner{
