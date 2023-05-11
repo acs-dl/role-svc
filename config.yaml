@@ -9,12 +9,21 @@ links:
   orchestrator: "http://localhost:8000/integrations/orchestrator"
 
 listener:
-  addr: :9005
+  addr: :9009
 
 jwt:
   secret: SuPeR SeCrEt PhRaSe
   refresh_life: 6h
   access_life: 10m5s
+
+registrator:
+  outer_url: "http://localhost:8000/integrations/orchestrator/modules" #endpoint to register MODULE
+  inner_url: "http://localhost:9009/integrations/role-svc" #endpoint to MODULE itself
+  topic: "role" #MODULE topic
+  title: "Role" #MODULE title
+  prefix: ""
+  is_module: false
+
 
 cop:
   disabled: true
